@@ -589,7 +589,7 @@ contract OWL is Ownable, Pausable, IERC20 {
             USDTokenAmount,
             0, // slippage is unavoidable
             0, // slippage is unavoidable
-            owner(),
+            address(this),
             block.timestamp
         );
     }
